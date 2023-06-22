@@ -76,11 +76,11 @@ logo = ("""
  
 
    \x1b[1;92m╔\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╗
-   \x1b[1;92m║➣TOOL NAME : SHEZY         ║
-   \x1b[1;92m║➣AUTHOR    : XD            ║
-   \x1b[1;92m║➣TOOLS     : NEW UPDATE      ║
-   \x1b[1;92m║➣FACEBOOK  : Shezy Malik      ║
-   \x1b[1;92m║➣Group     : SAJJAD & NADIR❤️║
+   \x1b[1;92m║➣TOOL NAME : SHEZY      ║
+   \x1b[1;92m║➣AUTHOR    : XD         ║
+   \x1b[1;92m║➣TOOLS     : NEW UPDATE     ║
+   \x1b[1;92m║➣FACEBOOK  : Shezy Malik         ║
+   \x1b[1;92m║➣Group     : SAJJAD & NADIR🥀❤️║
    \x1b[1;92m║➣Stetus    : FREE            ║
    \x1b[1;92m╚\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╝""")
 
